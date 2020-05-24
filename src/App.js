@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <div className="App" >
-      <h1> You Clicked {count} times ............</h1>
+      <h1> Clicked {count} times </h1>
       <button  className="App-Button" onClick = {()=> setCount(count + 1)}>Click Here</button>
       <br></br>
       <button className="App-Button" onClick = {()=> setCount(0)}  >Reset</button>
