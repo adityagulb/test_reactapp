@@ -1,56 +1,66 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'archia';
-  font-size: 24px !important;
-  font-weight: 900;
-  color: rebeccapurple;
+.container{
+   padding: 1em;
+   width: 100%;
+   text-align: center;
+
 }
 
-.App-Button {
-  align-items: center;
-  height: 70%;
-  justify-content: space-between;
-  margin-left: .7rem;
-  margin-right: .7rem;
-  margin-top: .7rem;
-  padding-left: 1.1rem;
-  width: 5rem;
+.dropdown{
+   margin: 1em 0;
+  padding: 0.5em;
+  font-size: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dropdown option{
+  word-wrap: break-word;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex {
+  min-height: 66vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.box{
+  margin: 1em 0;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 8px;
+  font-size: 1.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.box.confirmed {
+  border: 1px solid #c1e964;
+  background: #d15d30;
+}
+
+.box.recovered {
+  border: 1px solid #c1e964;
+  background: #e4da4f;
+}
+
+.box.deaths {
+  border: 1px solid #c1e964;
+  background: #4cccbb;
+}
+
+@media screen and (min-width: 900px){
+  .flex{
+      flex-wrap: nowrap;
   }
-  to {
-    transform: rotate(360deg);
+
+  .box{
+      margin: 1em ;
+      max-width: 300px;
+      line-height: 1.5;
+      font-size: 1.2em;
   }
 }
