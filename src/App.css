@@ -2,6 +2,24 @@
   text-align: center;
 }
 
+h1 {
+  font-family: 'archia';
+  font-size: 24px !important;
+  font-weight: 900;
+  color: rebeccapurple;
+}
+
+.App-Button {
+  align-items: center;
+  height: 70%;
+  justify-content: space-between;
+  margin-left: .7rem;
+  margin-right: .7rem;
+  margin-top: .7rem;
+  padding-left: 1.1rem;
+  width: 5rem;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
