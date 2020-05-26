@@ -1,6 +1,10 @@
 import React from "react";
-import Axios from "axios";
 import "./App.css";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import {Form,FormControl, Button} from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 export default class App extends React.Component{
     constructor(props){
@@ -42,53 +46,27 @@ export default class App extends React.Component{
     document.write('error: ' + error);
     
   });
-        
+}    
        
-    //     //const countries = Object.keys(resCountries.data.countries);
-    //     this.setState({
-    //         confirmed:resApi.data.confirmed.value,
-    //         recovered:resApi.data.recovered.value,
-    //         deaths:resApi.data.deaths.value,
-    //         countries
-    //     }
-    // }
-
-    // async getCountryData(e){
-    //     if(e.target.value === "Worldwide") {
-    //         return this.getData();     
-    //     }
-        
-    //     try{
-    //     const res = await Axios.get(`https://covid19.mathdro.id/api/countries/${e.target.value}`);
-    //     this.setState({
-    //         confirmed:res.data.confirmed.value,
-    //         recovered:res.data.recovered.value,
-    //         deaths:res.data.deaths.value
-    //     });
-    // }
-    // catch(err){
-    //     if(err.response.status===404)
-    //     this.setState({
-    //         confirmed:"No data available..",
-    //         recovered:"No data available..",
-    //         deaths:"No data available.."
-    //     });
-    // }
-    }
-
-   
-
-    // renderCountryOptions(){
-    //     return this.state.countries.map(( country, j) =>{
-    //     return <option key={j}>{ country }</option>
-    //     });
-
-    // }
-
+    
     render(){
       console.log("helloooooooooooooo");
         return (
+
+        
         <div className="container">
+          <Navbar bg="primary" variant="dark">
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+      <Button variant="outline-light">Search</Button>
+    </Form>
+  </Navbar>
             <h1>Covid-19 Update</h1>
             <h2>[INDIA]</h2>
 
